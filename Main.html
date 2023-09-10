@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<title>Personal Webpage</title>
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Garamond, times new roman;
+  background-color: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: green;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: green;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+h1 {
+color: green;
+}
+
+/* Blink for Webkit and others
+(Chrome, Safari, Firefox, IE, ...)
+*/
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+</style>
+</head>
+
+<b>
+
+<div class="topnav">
+				<a class="active" href="home.html" target="main">Home</a>
+				<a href="profile.html" target="main">Profile</a>
+				<a href="gallery.html" target="main">Gallery</a>
+				<a href="vlog.html" target="main">Vlog</a>
+				<a href="contact.html" target="main">Contact</a>
+				</div>
+				<div style="padding-left: 20px;">
+				
+				<center>
+				<script>function display_ct6() {
+var x = new Date()
+var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+hours = x.getHours( ) % 12;
+hours = hours ? hours : 12;
+var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+x1 = x1 + " - " +  hours + ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+document.getElementById('ct6').innerHTML = x1;
+display_c6();
+ }
+ function display_c6(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct6()',refresh)
+}
+display_c6()
+</script>
+<span id='ct6' style="background-color: #333"></span>
+				
+<h1 align="center" style="font-family: Cambria;" class="blink">Mel's Personal Webpage</h1>
+</br>
+<center>
+<iframe src="home.html" name="main" align="center" height="800" width="1200" color="green" border style="border-style: double; border-width: 10pt; border-color: green; border-top-style: ridge; border-bottom-style: ridge;border-radius: 100px">
+</center>
+<br>
+<img src="home1.jpeg" align="center" size="340" width="340" height="200"></iframe> 
+</body>
+</html>
